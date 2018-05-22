@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         print(chinChars.count)
         print(chinPinyin.count)
         print(chinMeaning.count)
-        let randNum : Int = Int(arc4random_uniform(_: 10))
+        let randNum : Int = Int(arc4random_uniform(_: 9))
         
         chinWord.text = chinChars[randNum]
         chinPin.text = chinPinyin[randNum]
