@@ -80,20 +80,14 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="MSn-mb-0gQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Character" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kU-rK-g1a">
-                                <rect key="frame" x="110" y="116" width="155" height="38.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
-                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2ZY-bN-O8G">
-                                <rect key="frame" x="16" y="241.5" width="343" height="265.5"/>
+                                <rect key="frame" x="16" y="327" width="343" height="180"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TBD-MW-NTj">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="133"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="90"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iL2-q8-H9e">
-                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="133"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="90"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="First Tone">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -103,7 +97,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wm-oi-LCn">
-                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="133"/>
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="90"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="Second Tone">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -115,10 +109,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EcQ-F3-evi">
-                                        <rect key="frame" x="0.0" y="133" width="343" height="132.5"/>
+                                        <rect key="frame" x="0.0" y="90" width="343" height="90"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eti-C4-cMy">
-                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="132.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="90"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="Third Tone">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -128,7 +122,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssc-ei-Ke7">
-                                                <rect key="frame" x="114.5" y="0.0" width="114" height="132.5"/>
+                                                <rect key="frame" x="114.5" y="0.0" width="114" height="90"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="Fourth Tone">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -138,7 +132,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB3-mn-KiZ">
-                                                <rect key="frame" x="228.5" y="0.0" width="114.5" height="132.5"/>
+                                                <rect key="frame" x="228.5" y="0.0" width="114.5" height="90"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="Neutral Tone">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -150,6 +144,9 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="lM0-6D-QOT"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wrong:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkQ-zy-d58">
                                 <rect key="frame" x="197" y="589" width="162" height="31"/>
@@ -165,25 +162,35 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntg-Pj-mx0">
+                                <rect key="frame" x="115" y="186" width="145" height="56"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <state key="normal" title="Character">
+                                    <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="speech:" destination="fq1-gq-aAP" eventType="touchUpInside" id="lcH-aE-8vS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93801554570000001" green="0.3574376775" blue="0.24590216849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ntg-Pj-mx0" firstAttribute="leading" secondItem="ZgP-6a-gyb" secondAttribute="leading" constant="115" id="2oH-Is-h7t"/>
                             <constraint firstItem="cSR-Ib-NEb" firstAttribute="leading" secondItem="ZgP-6a-gyb" secondAttribute="leading" constant="120" id="5OK-nD-YGz"/>
-                            <constraint firstItem="7kU-rK-g1a" firstAttribute="top" secondItem="cSR-Ib-NEb" secondAttribute="bottom" constant="45" id="8Pp-nR-R1H"/>
                             <constraint firstItem="ZgP-6a-gyb" firstAttribute="bottom" secondItem="2ZY-bN-O8G" secondAttribute="bottom" constant="160" id="Dr3-Bv-Gpl"/>
                             <constraint firstItem="cSR-Ib-NEb" firstAttribute="top" secondItem="ZgP-6a-gyb" secondAttribute="top" id="Ezx-5X-Gtk"/>
-                            <constraint firstItem="2ZY-bN-O8G" firstAttribute="top" secondItem="7kU-rK-g1a" secondAttribute="bottom" constant="87" id="NzO-mm-iDI"/>
-                            <constraint firstItem="7kU-rK-g1a" firstAttribute="leading" secondItem="ZgP-6a-gyb" secondAttribute="leading" constant="110" id="XLb-kX-qiI"/>
+                            <constraint firstItem="ntg-Pj-mx0" firstAttribute="top" secondItem="cSR-Ib-NEb" secondAttribute="bottom" constant="115" id="OMU-w3-2Ii"/>
                             <constraint firstItem="ZgP-6a-gyb" firstAttribute="trailing" secondItem="cSR-Ib-NEb" secondAttribute="trailing" constant="120" id="ae6-jg-5wm"/>
                             <constraint firstItem="ZgP-6a-gyb" firstAttribute="trailing" secondItem="2ZY-bN-O8G" secondAttribute="trailing" constant="16" id="fXf-35-9yK"/>
-                            <constraint firstItem="ZgP-6a-gyb" firstAttribute="trailing" secondItem="7kU-rK-g1a" secondAttribute="trailing" constant="110" id="ozK-bi-mWS"/>
+                            <constraint firstItem="2ZY-bN-O8G" firstAttribute="top" secondItem="ntg-Pj-mx0" secondAttribute="bottom" constant="85" id="rEV-i1-4Qi"/>
                             <constraint firstItem="2ZY-bN-O8G" firstAttribute="leading" secondItem="ZgP-6a-gyb" secondAttribute="leading" constant="16" id="u83-6F-adU"/>
+                            <constraint firstItem="ZgP-6a-gyb" firstAttribute="trailing" secondItem="ntg-Pj-mx0" secondAttribute="trailing" constant="115" id="vdj-BQ-jEj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZgP-6a-gyb"/>
                     </view>
                     <connections>
                         <outlet property="correctCount" destination="tLS-JK-gTl" id="E2K-Ws-qPo"/>
-                        <outlet property="testCharacter" destination="7kU-rK-g1a" id="dMC-9G-esb"/>
+                        <outlet property="testCharacter" destination="ntg-Pj-mx0" id="ROp-07-X63"/>
                         <outlet property="wrongCount" destination="RkQ-zy-d58" id="VlT-0g-wzA"/>
                     </connections>
                 </viewController>
@@ -272,6 +279,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mHc-5d-vGd"/>
+        <segue reference="MSn-mb-0gQ"/>
     </inferredMetricsTieBreakers>
 </document>

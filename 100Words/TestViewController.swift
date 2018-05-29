@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TestViewController: UIViewController {
 
@@ -22,8 +23,9 @@ class TestViewController: UIViewController {
     var correctGuessCount = 0
     var wrongGuessCount = 0
     var toneFound = false
+  
     
-    @IBOutlet weak var testCharacter: UILabel!
+    @IBOutlet weak var testCharacter: UIButton!
     @IBOutlet weak var correctCount: UILabel!
     @IBOutlet weak var wrongCount: UILabel!
     
@@ -31,12 +33,21 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         allWords.shuffle()
-        testCharacter.text = allWords[count][0]
+        testCharacter.setTitle(allWords[count][0], for: .normal)
         
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func speech(_ sender: Any) {
+        let utterance = AVSpeechUtterance(string: (testCharacter.titleLabel?.text!)!)
+        utterance.voice = AVSpeechSynthesisVoice(language: "zh-Hans")
+        utterance.rate = 0.5;
+        
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
+    }
+    
     @IBAction func firstToneButton(_ sender: Any) {
         for letter in allWords[count][1] {
             if firstToneVowels.contains(String(letter)){
@@ -94,7 +105,7 @@ class TestViewController: UIViewController {
             wrongCount.text = "Wrong: \(wrongGuessCount)"
         }
         //update to next character in the array
-        testCharacter.text = allWords[count][0]
+        testCharacter.setTitle(allWords[count][0], for: .normal) 
     }
     
     override func didReceiveMemoryWarning() {
