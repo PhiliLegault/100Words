@@ -38,7 +38,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sl9-Ud-NwG">
-                                <rect key="frame" x="120" y="256" width="135" height="48"/>
+                                <rect key="frame" x="120" y="296" width="135" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Test">
@@ -218,13 +218,6 @@
                                     <action selector="newWord:" destination="NRp-DO-mKW" eventType="touchUpInside" id="c5h-dm-b8v"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Character" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Uf-w6-FzU">
-                                <rect key="frame" x="113" y="259" width="148" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meaning" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3V-Hv-S4x">
                                 <rect key="frame" x="16" y="423" width="343" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -263,12 +256,23 @@
                                 <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6H-vj-CiC">
+                                <rect key="frame" x="128" y="259" width="119" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Character">
+                                    <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="characterToSpeech:" destination="NRp-DO-mKW" eventType="touchUpInside" id="xOm-d1-4If"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93801554568527923" green="0.35743767746559452" blue="0.24590216845568982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="9DP-7a-8GL"/>
                     </view>
                     <connections>
-                        <outlet property="chineseCharacter" destination="6Uf-w6-FzU" id="1kg-Ta-4AX"/>
+                        <outlet property="chineseCharacterButton" destination="f6H-vj-CiC" id="hUb-k4-8kb"/>
                         <outlet property="chinesePinyin" destination="ToJ-34-Fsh" id="eVh-jS-J2w"/>
                         <outlet property="englishMeaning" destination="y3V-Hv-S4x" id="PHF-fo-3xy"/>
                     </connections>
@@ -279,6 +283,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MSn-mb-0gQ"/>
+        <segue reference="mHc-5d-vGd"/>
     </inferredMetricsTieBreakers>
 </document>
